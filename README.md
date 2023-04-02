@@ -75,12 +75,18 @@ Dari tampilan Heatmap yang sudah dibuat, terlihat bahwa variabel 'Arrival Delay 
 
   Hasil pengisian data yang hilang cukup logis dan dapat dijelaskan sebagai berikut. Jika penerbangan pelanggan maskapai tertunda selama waktu tertentu saat keberangkatan ('Departure Delay in Minutes'), maka penerbangan akan tertunda dengan jumlah waktu yang sama saat mendarat/datang ('Arrival Delay in Minutes'). 
 
+- **`Ketiga`**, lakukan pebgubahan tipe data 'Arrival Delay in Minutes' dari float menjadi integer.  
+- **`Keempat`**, lakukan pengubahan tipe data pada data - data kolom yang berisikan penilaian kategori. Pada variabel/judul tabel 'satisfaction' tidak akan kita ubah karena merupakan variabel target.
+- **`Kelima`**, mengubah isi data pada kolom - kolom kategori dengan penilaian 0 : Tidak ingin mengisi, 1 : Sangat tidak puas, 2 : Tidak puas, 3 : Biasa saja, 4 : Puas, 5 : Sangat Puas.  
+- **`Keenam`**, kita perlu mengecek keberadaan data duplikat. Hal ini dilakukan dengan identifikasi baris duplikat menggunakan fungsi (duplicated()). Lalu, gunakan fungsi (print) untuk menampilkan baris duplikat. Hasilnya terlihat bahwa tidak ada data duplikat pada dataset kita.  
+- **`Ketujuh`**, dataset sudah siap digunakan untuk pengolahan data berikutnya. Tidak lupa juga, dataset ini disimpan ke dalam file dataset yang baru untuk digunakan dalam pengolahan visualisasi dalam Tableau.  
 
-
-
-
-
-
+## **3.) Exploratory Data Analysis**  
+Exploratory Data Analysis (EDA) merupakan proses dalam proyek Analisis Data yang dilakukan dengan cara menyelidiki dataset untuk menemukan pola, dan anomali, serta membentuk hipotesis berdasarkan pemahaman tentang dataset yang dimiliki. Exploratory Data Analysis biasanya dilakukan dengan pembuatan ringkasan statistik data numerik dalam dataset dan membuat berbagai macam visualisasi grafik untuk memahami data dengan lebih baik.  
+Adapun beberapa visualisasi grafik yang akan digunakan pada analisis ini, yaitu:  
+- Histogram adalah representasi grafis yang akurat dari distribusi data numerik dan perkiraan distribusi probabilitas dari variabel kuantitatif. Histogram hanya digunakan untuk memplot frekuensi kemunculan skor dalam kumpulan data kontinu yang telah dibagi ke dalam kelas-kelas, yang disebut bins. Pada analisis ini, histogram akan digunakan untuk menampilkan data sebaran serta melihat distribusi data pada kolom 'Age', 'Flight Distance', 'Departure Delay in Minutes', dan 'Arrival Delay in Minutes'.
+- Countplot adalah grafik sederhana yang digunakan untuk menghitung jumlah data berdasarkan kategorinya. Pada analisis ini, countplot akan digunakan untuk menampilkan data pada 'Gender', 'Customer Type', 'Type of Travel', 'Class', dan 'satisfaction'.
+- Pie Chart atau Diagram lingkaran adalah grafik melingkar yang dibagi menjadi beberapa bagian. Besarnya potongan dalam diagram menunjukkan besarnya proporsi dari jumlah total yang diwakilinya. Diagram lingkaran paling cocok dipakai untuk menggambarkan proporsi tiap - tiap bagian dari keseluruhan informasi tertentu. Oleh karena itu, pada Exploratory Data Analysis ini, juga akan menampilkan Pie Chart pada beberapa data agar lebih mudah untuk dipahami. Pie chart yang dibentuk akan menggunakan startangle = 90. Startangle adalah nilai awal rotasi object atau sudut awal dalam menggambar busur/lingkaran. Apabila tidak ditentukan, maka sudut awal grafik akan mengikuti defaultnya yaitu 0. Data yang akan ditampilkan meliputi: 'Inflight wifi service', 'Departure/Arrival time convenient', 'Ease of Online booking', 'Gate location', 'Food and drink', 'Online boarding', 'Seat comfort', 'Inflight entertainment', 'On-board service', 'Leg room service', 'Baggage handling', 'Checkin service', 'Inflight service', dan 'Cleanliness' 
 
 
 

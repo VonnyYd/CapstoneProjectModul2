@@ -57,7 +57,7 @@ Dari informasi yang telah didapatkan di atas, langkah berikutnya yang akan dilak
 - **`Pertama`**, kita akan menghapus data kolom yang tidak diperlukan, yaitu data Unnamed:0 dan id dari dataset. Hal ini juga termasuk dalam bentuk Data Formatting. 
 - **`Kedua`**, lakukan penanganan pada *Missing Value* atau data kosong.  
 Dalam hal ini, kita perlu melakukan pengujian korelasi pada variabel - variabel yang berisikan data numerik dan membuat serta menampilkan Heatmap. Hal ini berguna untuk visualisasi data, agar kita lebih mudah melihat dan memahami adanya hubungan antar variabel atau judul tabel. Selain itu, kita juga dapat mengetahui hubungan keberadaan data kosong terhadap variabel lainnya.    
- - **Pengujian Korelasi**  
+  - **Pengujian Korelasi**  
 Korelasi adalah tentang asosiasi dan tidak berimplikasi pada sebab akibat. Korelasi hanya mengukur seberapa kuat hubungan dan arah hubungan. Nilai korelasi berkisar pada -1 < r < 1, serta arah positif (+) dan arah negatif (-). Arah positif artinya bila satu variabel naik, maka variabel lain juga naik. Sedangkan, arah negatif memiliki hubungan yang berkebalikan, seperti hubungan populasi tikus di sawah dengan produksi padi.  
 
 Hasil korelasi dapat dinilai dari standar.  

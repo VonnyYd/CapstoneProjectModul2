@@ -59,13 +59,12 @@ Dari informasi yang telah didapatkan di atas, langkah berikutnya yang akan dilak
 Dalam hal ini, kita perlu melakukan pengujian korelasi pada variabel - variabel yang berisikan data numerik dan membuat serta menampilkan Heatmap. Hal ini berguna untuk visualisasi data, agar kita lebih mudah melihat dan memahami adanya hubungan antar variabel atau judul tabel. Selain itu, kita juga dapat mengetahui hubungan keberadaan data kosong terhadap variabel lainnya.    
   - **Pengujian Korelasi**  
 Korelasi adalah tentang asosiasi dan tidak berimplikasi pada sebab akibat. Korelasi hanya mengukur seberapa kuat hubungan dan arah hubungan. Nilai korelasi berkisar pada -1 < r < 1, serta arah positif (+) dan arah negatif (-). Arah positif artinya bila satu variabel naik, maka variabel lain juga naik. Sedangkan, arah negatif memiliki hubungan yang berkebalikan, seperti hubungan populasi tikus di sawah dengan produksi padi.  
+    Hasil korelasi dapat dinilai dari standar.  
+      - Nilai 0 - 0.3     : berarti hubungan lemah
+      - Nilai 0.3 - 0.7   : berarti hubungannya sedang
+      - Nilai 0.7 - 1     : berarti kekuatan hubungannya kuat  
 
-Hasil korelasi dapat dinilai dari standar.  
-- Nilai 0 - 0.3     : berarti hubungan lemah
-- Nilai 0.3 - 0.7   : berarti hubungannya sedang
-- Nilai 0.7 - 1     : berarti kekuatan hubungannya kuat  
-
-**Visualisasi Heatmap**  
+    - **Visualisasi Heatmap**  
 Heatmap korelasi menampilkan matriks korelasi 2 dimensi antara dua variable atau lebih. Heatmap ini menggunakan sel berwarna atau dalam skala monokromatik. Nilai dimensi pertama muncul di baris tabel, sedangkan nilai dimensi kedua diwakili oleh kolom tabel. Nilai warna sel mengikuti besaran pengukuran nilai korelasi. Biasanya semakin berkorelasi warnanya semakin gelap atau bisa sebaliknya. Melalui plot ini, Anda dapat mengidentifikasi pola dan anomali dari korelasi dengan lebih cepat.
 
 

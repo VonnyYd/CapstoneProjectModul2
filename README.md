@@ -63,9 +63,11 @@ Korelasi adalah tentang asosiasi dan tidak berimplikasi pada sebab akibat. Korel
       - Nilai 0 - 0.3     : berarti hubungan lemah
       - Nilai 0.3 - 0.7   : berarti hubungannya sedang
       - Nilai 0.7 - 1     : berarti kekuatan hubungannya kuat  
-
-    - **Visualisasi Heatmap**  
-Heatmap korelasi menampilkan matriks korelasi 2 dimensi antara dua variable atau lebih. Heatmap ini menggunakan sel berwarna atau dalam skala monokromatik. Nilai dimensi pertama muncul di baris tabel, sedangkan nilai dimensi kedua diwakili oleh kolom tabel. Nilai warna sel mengikuti besaran pengukuran nilai korelasi. Biasanya semakin berkorelasi warnanya semakin gelap atau bisa sebaliknya. Melalui plot ini, Anda dapat mengidentifikasi pola dan anomali dari korelasi dengan lebih cepat.
+  - **Visualisasi Heatmap**  
+Heatmap korelasi menampilkan matriks korelasi 2 dimensi antara dua variable atau lebih. Heatmap ini menggunakan sel berwarna atau dalam skala monokromatik. Nilai dimensi pertama muncul di baris tabel, sedangkan nilai dimensi kedua diwakili oleh kolom tabel. Nilai warna sel mengikuti besaran pengukuran nilai korelasi. Biasanya semakin berkorelasi warnanya semakin gelap atau bisa sebaliknya. Melalui plot ini, Anda dapat mengidentifikasi pola dan anomali dari korelasi dengan lebih cepat.  
+Dari tampilan Heatmap yang sudah dibuat, terlihat bahwa variabel 'Arrival Delay in Minutes' berkorelasi atau memiliki hubungan yang kuat dengan variabel 'Departure Delay in Minutes'. Dalam menangani data kosong atau *Missing Value*, ada 2 cara yang dapat dilakukan, yaitu:  
+      - Pertama, menghapus baris/kolom yang berisi *missing value*. Tidak disarankan pemakaian langsung, karena dapat mempengaruhi distribusi dan hasil pengujian statistik.  
+      - Kedua, mengisi data yang kosong. Cara ini disarankan. Ada beberapa metode yang bisa digunakan untuk mengisi *missing value*, cara yang paling baik adalah dengan mengisi data yang hilang dengan nilai sebenarnya, atau sedekat mungkin dengan nilai asli. Dalam analisis ini, kita akan  mengisi *missing value* berdasarkan kolom lain yang secara statistik berkaitan dengan kolom yang memiliki *missing value*. Jika masih ada kolom yang tidak bisa diisi, barulah kita mengisi dengan angka *mean, median* atau *modus*. Menghapus data akan menjadi opsi terakhir.  
 
 
 

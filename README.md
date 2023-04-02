@@ -45,7 +45,7 @@ Langkah kerja pertama akan diawali dengan menampilkan dataset yang dimiliki. Dat
 Kemudian, pada langkah kedua kita akan mengenali lebih dalam mengenai dataset yang akan digunakan melalui tahapan *data understanding*. Selain itu, juga akan dilakukan proses pembersihan data atau sering disebut *data cleaning*. Data Cleaning memiliki peranan penting sebagai tahap awal pengolahan data. Hal ini disebabkan data yang kotor dapat mempengaruhi hasil pengujian yang dilakukan. Proses Data cleaning biasanya terdiri dari menangani data Anomali, yaitu: missing value, data outlier, data formatting, dan/atau data duplikat.  
 
 **Data Info**  
-Untuk melihat gambaran awal dari dataset yang dimiliki, kita dapat menggunakan rumusan kode (df.info()). Melalui cara ini kita dapat melihat kolom apa saja dalam dataset, jumlah baris data yang terisi (tidak kosong), dan tipe datanya.
+Untuk melihat gambaran awal dari dataset yang dimiliki, kita dapat menggunakan rumusan kode (df.info()). Melalui cara ini kita dapat melihat kolom apa saja dalam dataset, jumlah baris data yang terisi (tidak kosong), dan tipe datanya.  
 Adapun informasi - informasi yang diperhatikan dari dataset ini, yaitu : 
 -   Dataset ini memiliki 103904 baris dan 25 kolom data  
 -   Pada judul tabel pertama dan kedua, yaitu Unnamed:0 dan id, sebenarnya kolom ini tidak dibutuhkan dan apabila dihapus, maka tidak akan memengaruhi klasifikasi. Jadi ada baiknya untuk disingkirkan. 
@@ -57,8 +57,7 @@ Dari informasi yang telah didapatkan di atas, langkah berikutnya yang akan dilak
 - **`Pertama`**, kita akan menghapus data kolom yang tidak diperlukan, yaitu data Unnamed:0 dan id dari dataset. Hal ini juga termasuk dalam bentuk Data Formatting. 
 - **`Kedua`**, lakukan penanganan pada *Missing Value* atau data kosong.  
 Dalam hal ini, kita perlu melakukan pengujian korelasi pada variabel - variabel yang berisikan data numerik dan membuat serta menampilkan Heatmap. Hal ini berguna untuk visualisasi data, agar kita lebih mudah melihat dan memahami adanya hubungan antar variabel atau judul tabel. Selain itu, kita juga dapat mengetahui hubungan keberadaan data kosong terhadap variabel lainnya.    
-
-**Pengujian Korelasi**  
+ - **Pengujian Korelasi**  
 Korelasi adalah tentang asosiasi dan tidak berimplikasi pada sebab akibat. Korelasi hanya mengukur seberapa kuat hubungan dan arah hubungan. Nilai korelasi berkisar pada -1 < r < 1, serta arah positif (+) dan arah negatif (-). Arah positif artinya bila satu variabel naik, maka variabel lain juga naik. Sedangkan, arah negatif memiliki hubungan yang berkebalikan, seperti hubungan populasi tikus di sawah dengan produksi padi.  
 
 Hasil korelasi dapat dinilai dari standar.  

@@ -51,13 +51,23 @@ Adapun informasi - informasi yang diperhatikan dari dataset ini, yaitu :
 -   Pada judul tabel pertama dan kedua, yaitu Unnamed:0 dan id, sebenarnya kolom ini tidak dibutuhkan dan apabila dihapus, maka tidak akan memengaruhi klasifikasi. Jadi ada baiknya untuk disingkirkan. 
 -	Kolom data “Arrival Delay in Minutes” memiliki 310 nilai yang hilang dan tipe datanya adalah 'float64'. Sehingga, perlu dilakukan penanganan pada data kosong serta pengubahan tipe data.  
 -   Pada data ke 8 sampai ke 21, yaitu : 'Inflight wifi service', 'Departure/Arrival time convenient', 'Ease of Online booking', 'Gate location', 'Food and drink', 'Online boarding', 'Seat comfort', 'Inflight entertainment', 'On-board service', 'Leg room service', 'Baggage handling', 'Checkin service', 'Inflight service', 'Cleanliness' memiliki tipe data int64. Sebenarnya, isi dari data - data ini adalah penilaian kategori. Sehingga, perlu dilakukan pengubahan pada tipe datanya.  
--   Isi dari data ke 8 sampai ke 21 adalah Penilaian 0 : Tidak ingin mengisi, 1 : Sangat tidak puas, 2 : Tidak puas, 3 : Biasa saja, 4 : Puas, 5 : Sangat Puas. Sehingga, kita juga akan melakukan penggantian inisiasi dari isi dalam data ini. 
+-   Isi dari data ke 8 sampai ke 21 adalah Penilaian 0 : Tidak ingin mengisi, 1 : Sangat tidak puas, 2 : Tidak puas, 3 : Biasa saja, 4 : Puas, 5 : Sangat Puas. Sehingga, kita juga akan melakukan penggantian inisiasi dari isi dalam data ini.  
 
+Dari informasi yang telah didapatkan di atas, langkah berikutnya yang akan dilakukan adalah sebagai berikut.  
+- **`Pertama`**, kita akan menghapus data kolom yang tidak diperlukan, yaitu data Unnamed:0 dan id dari dataset. Hal ini juga termasuk dalam bentuk Data Formatting. 
+- **`Kedua`**, lakukan penanganan pada *Missing Value* atau data kosong.  
+Dalam hal ini, kita perlu melakukan pengujian korelasi pada variabel - variabel yang berisikan data numerik dan membuat serta menampilkan Heatmap. Hal ini berguna untuk visualisasi data, agar kita lebih mudah melihat dan memahami adanya hubungan antar variabel atau judul tabel. Selain itu, kita juga dapat mengetahui hubungan keberadaan data kosong terhadap variabel lainnya.    
 
+**Pengujian Korelasi**  
+Korelasi adalah tentang asosiasi dan tidak berimplikasi pada sebab akibat. Korelasi hanya mengukur seberapa kuat hubungan dan arah hubungan. Nilai korelasi berkisar pada -1 < r < 1, serta arah positif (+) dan arah negatif (-). Arah positif artinya bila satu variabel naik, maka variabel lain juga naik. Sedangkan, arah negatif memiliki hubungan yang berkebalikan, seperti hubungan populasi tikus di sawah dengan produksi padi.  
 
+Hasil korelasi dapat dinilai dari standar.  
+- Nilai 0 - 0.3     : berarti hubungan lemah
+- Nilai 0.3 - 0.7   : berarti hubungannya sedang
+- Nilai 0.7 - 1     : berarti kekuatan hubungannya kuat  
 
-
-
+**Visualisasi Heatmap**  
+Heatmap korelasi menampilkan matriks korelasi 2 dimensi antara dua variable atau lebih. Heatmap ini menggunakan sel berwarna atau dalam skala monokromatik. Nilai dimensi pertama muncul di baris tabel, sedangkan nilai dimensi kedua diwakili oleh kolom tabel. Nilai warna sel mengikuti besaran pengukuran nilai korelasi. Biasanya semakin berkorelasi warnanya semakin gelap atau bisa sebaliknya. Melalui plot ini, Anda dapat mengidentifikasi pola dan anomali dari korelasi dengan lebih cepat.
 
 
 
